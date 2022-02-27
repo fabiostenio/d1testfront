@@ -44,9 +44,7 @@
 
     - Execute, na pasta do projeto: yarn install
     
-    - Para rodar em desenvolvimento, Execute: yarn dev 
-    
-    - Para rodar em implantação, Execute: yarn start 
+    - Para rodar, Execute: yarn dev 
   
   
 <h1>EXEMPLO EM EXECUÇÃO</h1>
