@@ -9,6 +9,8 @@ function MovieDetails() {
   const [genres, setGenres] = useState('');
   const [movieId, setMovieId] = useState(0);
   const [totalStars, setTotalStars] = useState(0)
+
+
   const handleSetLikes = (id) => {
     api.get(`movies/likeMoviesId`).then((likeMovies) => {
       const isLikes = likeMovies.data.find(favorite => favorite.movie == id);
@@ -25,11 +27,13 @@ function MovieDetails() {
       await api.delete(`movies/likeMovies/${id}`);
     }//end if
 
+    
     handleSetLikes(id)
   }
   useEffect(() => {
     const urlSplit = window.location.href.split("/");
-    const id = urlSplit.at(-1)
+    const id = urlSplit[urlSplit.length-1];
+    //alert(id);
     setMovieId(parseInt(id));
     let genresArray = [];
     api.get(`movies/getDetails/${id}`).then(movie => {     

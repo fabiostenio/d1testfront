@@ -26,8 +26,9 @@ function Carousel({title, movies, icon, emptyMsg, slidesToShow}) {
       <Title >{icon} {title}</Title> 
       <Slider {...settings}>
         {movies.length < 1 ? <TextCarroseulNull> <div> <h1 > {emptyMsg}  </h1> </div></TextCarroseulNull> : movies.map(movie => {
-          const posterPathIsNull = movie.poster_path.split("/").at(-1) == 'null';
-          if(!posterPathIsNull) {
+          //console.log(movie.poster_path.split("/").at(-1));
+          //const posterPathIsNull = movie.poster_path.split("/").at(-1) == 'null';
+          //if(!posterPathIsNull) {
             return (
               <div key = {movie.id} >
                 <Link to = {`/movie/detail/${movie.id}`} > 
@@ -35,7 +36,7 @@ function Carousel({title, movies, icon, emptyMsg, slidesToShow}) {
                 </Link>
               </div>
             )
-          }
+          //}
         })}
       </Slider>
     </div>
