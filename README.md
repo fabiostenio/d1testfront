@@ -21,7 +21,6 @@
 
   <h2>DOWNLOAD E EXECUÇÃO</h2>
 
-
     - Downaload Front:
       Github: https://github.com/fabiostenio/d1testfront.git
 
@@ -29,16 +28,18 @@
       Github: https://github.com/fabiostenio/d1testback.git
 
     - Deploy da Aplicação
-
+      http://45.80.152.210:3000/
 
 
 <h1>INSTALAÇÃO</h1>
   <h2>Dependências</h2>
+    
     - NodeJs 10+
 
     - Yarn
 
   <h2>Siga os passos</h2>
+    
     - Instale (micro-serviços: https://github.com/fabiostenio/d1testback.git).
 
     - Execute, na pasta do projeto: yarn install
@@ -49,4 +50,4 @@
   
   
 <h1>EXEMPLO EM EXECUÇÃO</h1>
-  
+      http://45.80.152.210:3000/  
